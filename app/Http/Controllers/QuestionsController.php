@@ -79,7 +79,7 @@ class QuestionsController extends Controller
     public function update(AskQuestionRequest $request, Question $question)
     {
         $question->update($request->only('title', 'body'));
-        return redirect()->route('questions.index')->with('success', 'Question has been updated');
+        return redirect()->route('questions.index')->with('success', "Question has been updated");
     }
 
     /**
