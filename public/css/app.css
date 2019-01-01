@@ -10503,12 +10503,30 @@ a.text-dark:focus {
 
 .counters strong {
   display: block;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .counters .vote,
 .counters .answer {
   width: 60px;
   height: 60px;
+}
+
+.counters .status.unanswerd {
+  border: none;
+}
+
+.counters .status.answered {
+  border: 1px solid #5fbb7f;
+  color: #5fbb7f;
+}
+
+.counters .status.answer-accepted {
+  background: #5fbb7f;
+  color: #fff;
+}
+
+.counters .view {
+  margin-top: 10px;
 }
 
